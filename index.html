@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>Sound Identification Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="col-xs-12 header_div text-center">
+    <h2>Animal Sound</h2>
+    <p>Note : Play different sounds like barking(dog), meowing(cat), roar(tiger) and mooing(cow) to make the aliens dance</p>
+  </div>
+  <div class="main_div">
+  <center>
+    <br>
+    <button class="btn btn-success" onclick="startClassification();"> START </button>
+    <h3 id="result_label">I can hear - </h3>
+    <h3 id="result_confidence">Accuracy - </h3>
+    <br>
+    <img src="mute.jpg" id="display_img" width="300" height="300">
+  </center>
+  </div>
+  <div class="copy_right_footer">
+    Devoloped by - WhitehatJr student - Trisshiv T
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
